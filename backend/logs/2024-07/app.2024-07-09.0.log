@@ -1,0 +1,819 @@
+2024-07-09T20:07:27.384+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Starting FmsbmsApplication using Java 17.0.9 with PID 33832 (D:\NumberPortabilityPortalProject\fmsbms\backend\target\classes started by srivalli.p in D:\NumberPortabilityPortalProject\fmsbms\backend)
+2024-07-09T20:07:27.396+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T20:07:27.474+05:30  INFO 33832 --- [fmsbms] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-09T20:07:27.475+05:30  INFO 33832 --- [fmsbms] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-09T20:07:28.693+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-09T20:07:28.832+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 130 ms. Found 9 JPA repository interfaces.
+2024-07-09T20:07:29.427+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-09T20:07:29.448+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-09T20:07:29.448+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-09T20:07:29.541+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-09T20:07:29.542+05:30  INFO 33832 --- [fmsbms] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2066 ms
+2024-07-09T20:07:29.733+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-09T20:07:29.813+05:30  INFO 33832 --- [fmsbms] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-09T20:07:29.886+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-09T20:07:30.274+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-09T20:07:30.312+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-09T20:07:30.760+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@455b9925
+2024-07-09T20:07:30.763+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-09T20:07:30.851+05:30  WARN 33832 --- [fmsbms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-09T20:07:32.213+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-09T20:07:32.468+05:30  INFO 33832 --- [fmsbms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T20:07:33.039+05:30  INFO 33832 --- [fmsbms] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-09T20:07:33.040+05:30  WARN 33832 --- [fmsbms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-09T20:07:33.200+05:30  WARN 33832 --- [fmsbms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-09T20:07:33.836+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-09T20:07:33.887+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-09T20:07:33.898+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Started FmsbmsApplication in 7.06 seconds (process running for 8.409)
+2024-07-09T20:07:42.377+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-09T20:07:42.377+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-09T20:07:42.379+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-09T20:07:43.223+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-8] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 493 ms
+2024-07-09T20:13:10.285+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-6] c.p.fmsbms.controller.AuthController     : signin
+2024-07-09T20:13:10.500+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-6] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T20:14:02.798+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-8] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T20:14:02.798+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-8] c.p.fmsbms.service.FamilyServiceImpl     : getFamilyByUsername
+2024-07-09T20:14:02.840+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-8] c.p.fmsbms.service.FamilyServiceImpl     : updateFamily
+2024-07-09T20:14:58.500+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-10] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T20:14:58.500+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-10] c.p.fmsbms.controller.AuthController     : signin
+2024-07-09T20:14:58.500+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-10] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T20:15:39.742+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-9] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T20:15:39.748+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-9] c.p.fmsbms.service.FamilyServiceImpl     : getFamilyByUsername
+2024-07-09T20:15:39.777+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-9] c.p.f.service.FamilyMemberServiceImpl    : addMember
+2024-07-09T20:15:39.779+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-9] c.p.f.service.FamilyMemberServiceImpl    : addMember
+2024-07-09T20:15:39.779+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-9] c.p.f.service.FamilyMemberServiceImpl    : addMember
+2024-07-09T20:15:39.794+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-9] c.p.f.service.MobileServiceServiceImpl   : addMobileService
+2024-07-09T20:15:39.794+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-9] c.p.f.service.FamilyMemberServiceImpl    : getMember
+2024-07-09T20:15:39.809+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-9] c.p.f.service.MobileServiceServiceImpl   : addMobileService
+2024-07-09T20:15:39.811+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-9] c.p.f.service.FamilyMemberServiceImpl    : getMember
+2024-07-09T20:15:39.811+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-9] c.p.f.service.MobileServiceServiceImpl   : addMobileService
+2024-07-09T20:16:32.485+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-3] c.p.fmsbms.controller.AuthController     : signin
+2024-07-09T20:16:32.496+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-3] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T20:35:49.041+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-9] c.p.fmsbms.controller.AuthController     : signin
+2024-07-09T20:35:49.049+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-9] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T20:35:53.567+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-3] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T20:35:53.585+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-3] c.p.f.service.UserEntityServiceImpl      : Role found
+2024-07-09T20:36:03.040+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-5] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T20:41:50.263+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-6] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T20:41:50.272+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-6] c.p.f.service.UserEntityServiceImpl      : Role found
+2024-07-09T20:41:51.931+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-7] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T20:42:45.863+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-10] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T20:42:45.866+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-10] c.p.fmsbms.controller.AuthController     : signin
+2024-07-09T20:42:45.871+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-10] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T20:43:42.720+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-1] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T20:43:42.725+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-1] c.p.fmsbms.service.FamilyServiceImpl     : getFamilyByUsername
+2024-07-09T20:43:42.741+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-1] c.p.fmsbms.service.FamilyServiceImpl     : updateFamily
+2024-07-09T20:44:22.702+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-3] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T20:44:22.704+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-3] c.p.fmsbms.controller.AuthController     : signin
+2024-07-09T20:44:22.708+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-3] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T20:44:52.500+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-2] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T20:44:52.511+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-2] c.p.fmsbms.service.FamilyServiceImpl     : getFamilyByUsername
+2024-07-09T20:44:52.523+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-2] c.p.f.service.FamilyMemberServiceImpl    : addMember
+2024-07-09T20:44:52.530+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-2] c.p.f.service.FamilyMemberServiceImpl    : addMember
+2024-07-09T20:44:52.540+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-2] c.p.f.service.FamilyMemberServiceImpl    : addMember
+2024-07-09T20:44:52.547+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-2] c.p.f.service.FamilyMemberServiceImpl    : addMember
+2024-07-09T20:44:52.557+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-2] c.p.f.service.FamilyMemberServiceImpl    : addMember
+2024-07-09T20:44:52.566+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-2] c.p.f.service.MobileServiceServiceImpl   : addMobileService
+2024-07-09T20:44:52.568+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-2] c.p.f.service.FamilyMemberServiceImpl    : getMember
+2024-07-09T20:44:52.576+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-2] c.p.f.service.MobileServiceServiceImpl   : addMobileService
+2024-07-09T20:44:52.579+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-2] c.p.f.service.FamilyMemberServiceImpl    : getMember
+2024-07-09T20:44:52.585+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-2] c.p.f.service.MobileServiceServiceImpl   : addMobileService
+2024-07-09T20:44:52.586+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-2] c.p.f.service.FamilyMemberServiceImpl    : getMember
+2024-07-09T20:44:52.594+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-2] c.p.f.service.MobileServiceServiceImpl   : addMobileService
+2024-07-09T20:44:52.597+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-2] c.p.f.service.FamilyMemberServiceImpl    : getMember
+2024-07-09T20:44:52.603+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-2] c.p.f.service.MobileServiceServiceImpl   : addMobileService
+2024-07-09T20:46:59.897+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-4] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T20:46:59.901+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-4] c.p.fmsbms.controller.AuthController     : signin
+2024-07-09T20:46:59.908+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-4] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T20:47:34.294+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-6] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T20:47:34.310+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-6] c.p.fmsbms.service.FamilyServiceImpl     : getFamilyById
+2024-07-09T20:47:34.310+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-6] c.p.f.service.FamilyMemberServiceImpl    : findByFamily
+2024-07-09T20:56:28.719+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-8] c.p.fmsbms.controller.AuthController     : signin
+2024-07-09T20:56:28.725+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-8] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T21:03:43.767+05:30  INFO 33832 --- [fmsbms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-07-09T21:03:44.091+05:30  INFO 33832 --- [fmsbms] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T21:03:44.115+05:30  INFO 33832 --- [fmsbms] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-09T21:03:44.126+05:30  INFO 33832 --- [fmsbms] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-09T21:03:44.317+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Starting FmsbmsApplication using Java 17.0.9 with PID 33832 (D:\NumberPortabilityPortalProject\fmsbms\backend\target\classes started by srivalli.p in D:\NumberPortabilityPortalProject\fmsbms\backend)
+2024-07-09T21:03:44.317+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T21:03:44.756+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-09T21:03:44.798+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 9 JPA repository interfaces.
+2024-07-09T21:03:44.870+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-09T21:03:44.871+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-09T21:03:44.872+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-09T21:03:44.895+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-09T21:03:44.895+05:30  INFO 33832 --- [fmsbms] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 576 ms
+2024-07-09T21:03:44.939+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-09T21:03:44.943+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-09T21:03:44.952+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-09T21:03:44.953+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-07-09T21:03:44.966+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@32738094
+2024-07-09T21:03:44.967+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-07-09T21:03:44.968+05:30  WARN 33832 --- [fmsbms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-09T21:03:45.111+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-09T21:03:45.193+05:30  INFO 33832 --- [fmsbms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T21:03:45.334+05:30  INFO 33832 --- [fmsbms] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-09T21:03:45.334+05:30  WARN 33832 --- [fmsbms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-09T21:03:45.373+05:30  WARN 33832 --- [fmsbms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-09T21:03:45.497+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-09T21:03:45.512+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-09T21:03:45.516+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Started FmsbmsApplication in 1.322 seconds (process running for 3380.026)
+2024-07-09T21:03:45.519+05:30  INFO 33832 --- [fmsbms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-07-09T21:03:46.946+05:30  INFO 33832 --- [fmsbms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2024-07-09T21:03:47.205+05:30  INFO 33832 --- [fmsbms] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T21:03:47.207+05:30  INFO 33832 --- [fmsbms] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-07-09T21:03:47.212+05:30  INFO 33832 --- [fmsbms] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-07-09T21:03:47.329+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Starting FmsbmsApplication using Java 17.0.9 with PID 33832 (D:\NumberPortabilityPortalProject\fmsbms\backend\target\classes started by srivalli.p in D:\NumberPortabilityPortalProject\fmsbms\backend)
+2024-07-09T21:03:47.329+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T21:03:47.472+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-09T21:03:47.503+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 9 JPA repository interfaces.
+2024-07-09T21:03:47.563+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-09T21:03:47.563+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-09T21:03:47.564+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-09T21:03:47.588+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-09T21:03:47.588+05:30  INFO 33832 --- [fmsbms] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 258 ms
+2024-07-09T21:03:47.612+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-09T21:03:47.616+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-09T21:03:47.621+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-09T21:03:47.622+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-07-09T21:03:47.631+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@70a7daec
+2024-07-09T21:03:47.632+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-07-09T21:03:47.634+05:30  WARN 33832 --- [fmsbms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-09T21:03:47.746+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-09T21:03:47.812+05:30  INFO 33832 --- [fmsbms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T21:03:47.896+05:30  INFO 33832 --- [fmsbms] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-09T21:03:47.897+05:30  WARN 33832 --- [fmsbms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-09T21:03:47.949+05:30  WARN 33832 --- [fmsbms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-09T21:03:48.034+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-09T21:03:48.049+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-09T21:03:48.052+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Started FmsbmsApplication in 0.785 seconds (process running for 3382.562)
+2024-07-09T21:03:48.054+05:30  INFO 33832 --- [fmsbms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-07-09T21:03:52.582+05:30  INFO 33832 --- [fmsbms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-07-09T21:03:52.917+05:30  INFO 33832 --- [fmsbms] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T21:03:52.918+05:30  INFO 33832 --- [fmsbms] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-07-09T21:03:52.922+05:30  INFO 33832 --- [fmsbms] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-07-09T21:03:53.027+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Starting FmsbmsApplication using Java 17.0.9 with PID 33832 (D:\NumberPortabilityPortalProject\fmsbms\backend\target\classes started by srivalli.p in D:\NumberPortabilityPortalProject\fmsbms\backend)
+2024-07-09T21:03:53.027+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T21:03:53.161+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-09T21:03:53.192+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 9 JPA repository interfaces.
+2024-07-09T21:03:53.294+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-09T21:03:53.295+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-09T21:03:53.295+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-09T21:03:53.323+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-09T21:03:53.324+05:30  INFO 33832 --- [fmsbms] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 295 ms
+2024-07-09T21:03:53.350+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-09T21:03:53.352+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-09T21:03:53.357+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-09T21:03:53.358+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-07-09T21:03:53.368+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c78c718
+2024-07-09T21:03:53.368+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-07-09T21:03:53.369+05:30  WARN 33832 --- [fmsbms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-09T21:03:53.458+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-09T21:03:53.529+05:30  INFO 33832 --- [fmsbms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T21:03:53.606+05:30  INFO 33832 --- [fmsbms] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-09T21:03:53.606+05:30  WARN 33832 --- [fmsbms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-09T21:03:53.638+05:30  WARN 33832 --- [fmsbms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-09T21:03:53.727+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-09T21:03:53.739+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-09T21:03:53.742+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Started FmsbmsApplication in 0.765 seconds (process running for 3388.252)
+2024-07-09T21:03:53.743+05:30  INFO 33832 --- [fmsbms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-07-09T21:04:01.349+05:30  INFO 33832 --- [fmsbms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-07-09T21:04:01.588+05:30  INFO 33832 --- [fmsbms] [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T21:04:01.589+05:30  INFO 33832 --- [fmsbms] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-07-09T21:04:01.596+05:30  INFO 33832 --- [fmsbms] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2024-07-09T21:04:01.673+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Starting FmsbmsApplication using Java 17.0.9 with PID 33832 (D:\NumberPortabilityPortalProject\fmsbms\backend\target\classes started by srivalli.p in D:\NumberPortabilityPortalProject\fmsbms\backend)
+2024-07-09T21:04:01.673+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T21:04:01.991+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-09T21:04:02.068+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75 ms. Found 9 JPA repository interfaces.
+2024-07-09T21:04:02.198+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-09T21:04:02.198+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-09T21:04:02.199+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-09T21:04:02.236+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-09T21:04:02.236+05:30  INFO 33832 --- [fmsbms] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 562 ms
+2024-07-09T21:04:02.286+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-09T21:04:02.289+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-09T21:04:02.296+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-09T21:04:02.296+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2024-07-09T21:04:02.307+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4dec1f21
+2024-07-09T21:04:02.308+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2024-07-09T21:04:02.309+05:30  WARN 33832 --- [fmsbms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-09T21:04:02.388+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-09T21:04:02.461+05:30  INFO 33832 --- [fmsbms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T21:04:02.554+05:30  INFO 33832 --- [fmsbms] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-09T21:04:02.554+05:30  WARN 33832 --- [fmsbms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-09T21:04:02.596+05:30  WARN 33832 --- [fmsbms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-09T21:04:02.703+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-09T21:04:02.717+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-09T21:04:02.720+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Started FmsbmsApplication in 1.07 seconds (process running for 3397.23)
+2024-07-09T21:04:02.721+05:30  INFO 33832 --- [fmsbms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-07-09T21:04:04.145+05:30  INFO 33832 --- [fmsbms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-07-09T21:04:04.732+05:30  INFO 33832 --- [fmsbms] [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T21:04:04.732+05:30  INFO 33832 --- [fmsbms] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2024-07-09T21:04:04.737+05:30  INFO 33832 --- [fmsbms] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2024-07-09T21:04:04.826+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Starting FmsbmsApplication using Java 17.0.9 with PID 33832 (D:\NumberPortabilityPortalProject\fmsbms\backend\target\classes started by srivalli.p in D:\NumberPortabilityPortalProject\fmsbms\backend)
+2024-07-09T21:04:04.827+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T21:04:04.967+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-09T21:04:04.995+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 9 JPA repository interfaces.
+2024-07-09T21:04:05.052+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-09T21:04:05.052+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-09T21:04:05.053+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-09T21:04:05.084+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-09T21:04:05.085+05:30  INFO 33832 --- [fmsbms] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 257 ms
+2024-07-09T21:04:05.109+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-09T21:04:05.111+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-09T21:04:05.117+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-09T21:04:05.119+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2024-07-09T21:04:05.136+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4b477665
+2024-07-09T21:04:05.136+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2024-07-09T21:04:05.137+05:30  WARN 33832 --- [fmsbms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-09T21:04:05.228+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-09T21:04:05.299+05:30  INFO 33832 --- [fmsbms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T21:04:05.392+05:30  INFO 33832 --- [fmsbms] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-09T21:04:05.393+05:30  WARN 33832 --- [fmsbms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-09T21:04:05.425+05:30  WARN 33832 --- [fmsbms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-09T21:04:05.513+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-09T21:04:05.523+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-09T21:04:05.527+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Started FmsbmsApplication in 0.717 seconds (process running for 3400.036)
+2024-07-09T21:04:05.528+05:30  INFO 33832 --- [fmsbms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-07-09T21:04:29.511+05:30  INFO 33832 --- [fmsbms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-07-09T21:04:29.895+05:30  INFO 33832 --- [fmsbms] [Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T21:04:29.897+05:30  INFO 33832 --- [fmsbms] [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2024-07-09T21:04:29.907+05:30  INFO 33832 --- [fmsbms] [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2024-07-09T21:04:30.020+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Starting FmsbmsApplication using Java 17.0.9 with PID 33832 (D:\NumberPortabilityPortalProject\fmsbms\backend\target\classes started by srivalli.p in D:\NumberPortabilityPortalProject\fmsbms\backend)
+2024-07-09T21:04:30.021+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T21:04:30.164+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-09T21:04:30.221+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 9 JPA repository interfaces.
+2024-07-09T21:04:30.275+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-09T21:04:30.276+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-09T21:04:30.276+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-09T21:04:30.294+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-09T21:04:30.294+05:30  INFO 33832 --- [fmsbms] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 272 ms
+2024-07-09T21:04:30.315+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-09T21:04:30.316+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-09T21:04:30.321+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-09T21:04:30.321+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2024-07-09T21:04:30.331+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2e5a5f29
+2024-07-09T21:04:30.332+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2024-07-09T21:04:30.334+05:30  WARN 33832 --- [fmsbms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-09T21:04:30.406+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-09T21:04:30.471+05:30  INFO 33832 --- [fmsbms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T21:04:30.545+05:30  INFO 33832 --- [fmsbms] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-09T21:04:30.546+05:30  WARN 33832 --- [fmsbms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-09T21:04:30.580+05:30  WARN 33832 --- [fmsbms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-09T21:04:30.671+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-09T21:04:30.682+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-09T21:04:30.686+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Started FmsbmsApplication in 0.723 seconds (process running for 3425.196)
+2024-07-09T21:04:30.687+05:30  INFO 33832 --- [fmsbms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-07-09T21:04:42.321+05:30  INFO 33832 --- [fmsbms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-07-09T21:04:42.618+05:30  INFO 33832 --- [fmsbms] [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T21:04:42.620+05:30  INFO 33832 --- [fmsbms] [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2024-07-09T21:04:42.628+05:30  INFO 33832 --- [fmsbms] [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2024-07-09T21:04:42.741+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Starting FmsbmsApplication using Java 17.0.9 with PID 33832 (D:\NumberPortabilityPortalProject\fmsbms\backend\target\classes started by srivalli.p in D:\NumberPortabilityPortalProject\fmsbms\backend)
+2024-07-09T21:04:42.741+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T21:04:42.892+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-09T21:04:42.929+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 9 JPA repository interfaces.
+2024-07-09T21:04:42.992+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-09T21:04:42.992+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-09T21:04:42.993+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-09T21:04:43.011+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-09T21:04:43.011+05:30  INFO 33832 --- [fmsbms] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 268 ms
+2024-07-09T21:04:43.035+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-09T21:04:43.037+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-09T21:04:43.042+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-09T21:04:43.044+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2024-07-09T21:04:43.055+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@86d3e45
+2024-07-09T21:04:43.055+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2024-07-09T21:04:43.056+05:30  WARN 33832 --- [fmsbms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-09T21:04:43.150+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-09T21:04:43.223+05:30  INFO 33832 --- [fmsbms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T21:04:43.304+05:30  INFO 33832 --- [fmsbms] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-09T21:04:43.305+05:30  WARN 33832 --- [fmsbms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-09T21:04:43.346+05:30  WARN 33832 --- [fmsbms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-09T21:04:43.449+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-09T21:04:43.468+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-09T21:04:43.472+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Started FmsbmsApplication in 0.787 seconds (process running for 3437.982)
+2024-07-09T21:04:43.473+05:30  INFO 33832 --- [fmsbms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-07-09T21:05:14.389+05:30  INFO 33832 --- [fmsbms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-07-09T21:05:14.754+05:30  INFO 33832 --- [fmsbms] [Thread-31] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T21:05:14.754+05:30  INFO 33832 --- [fmsbms] [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2024-07-09T21:05:14.760+05:30  INFO 33832 --- [fmsbms] [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2024-07-09T21:05:14.862+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Starting FmsbmsApplication using Java 17.0.9 with PID 33832 (D:\NumberPortabilityPortalProject\fmsbms\backend\target\classes started by srivalli.p in D:\NumberPortabilityPortalProject\fmsbms\backend)
+2024-07-09T21:05:14.862+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T21:05:15.005+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-09T21:05:15.031+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 9 JPA repository interfaces.
+2024-07-09T21:05:15.088+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-09T21:05:15.090+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-09T21:05:15.090+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-09T21:05:15.133+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-09T21:05:15.133+05:30  INFO 33832 --- [fmsbms] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 269 ms
+2024-07-09T21:05:15.254+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-09T21:05:15.257+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-09T21:05:15.287+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-09T21:05:15.288+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2024-07-09T21:05:15.306+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@56a2d6ff
+2024-07-09T21:05:15.306+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2024-07-09T21:05:15.308+05:30  WARN 33832 --- [fmsbms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-09T21:05:15.404+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-09T21:05:15.485+05:30  INFO 33832 --- [fmsbms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T21:05:15.614+05:30  INFO 33832 --- [fmsbms] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-09T21:05:15.614+05:30  WARN 33832 --- [fmsbms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-09T21:05:15.635+05:30  WARN 33832 --- [fmsbms] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'familyController': Lookup method resolution failed
+2024-07-09T21:05:15.636+05:30  INFO 33832 --- [fmsbms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T21:05:15.636+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2024-07-09T21:05:15.650+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2024-07-09T21:05:15.651+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-07-09T21:05:15.659+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-07-09T21:05:15.684+05:30 ERROR 33832 --- [fmsbms] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'familyController': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:497) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:367) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1296) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.10.jar:6.1.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.10.jar:6.1.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.10.jar:6.1.10]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.1.jar:3.3.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.1.jar:3.3.1]
+	at com.project.fmsbms.FmsbmsApplication.main(FmsbmsApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.1.jar:3.3.1]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.project.fmsbms.controller.FamilyController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@7961ee5]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483) ~[spring-core-6.1.10.jar:6.1.10]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320) ~[spring-core-6.1.10.jar:6.1.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:475) ~[spring-beans-6.1.10.jar:6.1.10]
+	... 24 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: FamilyUsername
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465) ~[spring-core-6.1.10.jar:6.1.10]
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: FamilyUsername
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.3.1.jar:3.3.1]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
+	... 30 common frames omitted
+
+2024-07-09T21:05:20.178+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Starting FmsbmsApplication using Java 17.0.9 with PID 33832 (D:\NumberPortabilityPortalProject\fmsbms\backend\target\classes started by srivalli.p in D:\NumberPortabilityPortalProject\fmsbms\backend)
+2024-07-09T21:05:20.178+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T21:05:20.339+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-09T21:05:20.389+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 9 JPA repository interfaces.
+2024-07-09T21:05:20.471+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-09T21:05:20.472+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-09T21:05:20.472+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-09T21:05:20.488+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-07-09T21:05:20.488+05:30  INFO 33832 --- [fmsbms] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 308 ms
+2024-07-09T21:05:20.510+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-09T21:05:20.511+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-09T21:05:20.514+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-09T21:05:20.515+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2024-07-09T21:05:20.524+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c35fcaa
+2024-07-09T21:05:20.524+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2024-07-09T21:05:20.525+05:30  WARN 33832 --- [fmsbms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-09T21:05:20.609+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-09T21:05:20.668+05:30  INFO 33832 --- [fmsbms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T21:05:20.736+05:30  INFO 33832 --- [fmsbms] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-09T21:05:20.736+05:30  WARN 33832 --- [fmsbms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-09T21:05:20.769+05:30  WARN 33832 --- [fmsbms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-09T21:05:20.917+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-09T21:05:20.929+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-09T21:05:20.932+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Started FmsbmsApplication in 0.773 seconds (process running for 3475.442)
+2024-07-09T21:05:20.933+05:30  INFO 33832 --- [fmsbms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-07-09T21:05:31.502+05:30  INFO 33832 --- [fmsbms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-07-09T21:05:31.762+05:30  INFO 33832 --- [fmsbms] [Thread-35] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T21:05:31.763+05:30  INFO 33832 --- [fmsbms] [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2024-07-09T21:05:31.768+05:30  INFO 33832 --- [fmsbms] [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2024-07-09T21:05:31.877+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Starting FmsbmsApplication using Java 17.0.9 with PID 33832 (D:\NumberPortabilityPortalProject\fmsbms\backend\target\classes started by srivalli.p in D:\NumberPortabilityPortalProject\fmsbms\backend)
+2024-07-09T21:05:31.877+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T21:05:32.015+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-09T21:05:32.043+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 9 JPA repository interfaces.
+2024-07-09T21:05:32.103+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-09T21:05:32.103+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-09T21:05:32.103+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-09T21:05:32.121+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-07-09T21:05:32.121+05:30  INFO 33832 --- [fmsbms] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 243 ms
+2024-07-09T21:05:32.141+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-09T21:05:32.143+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-09T21:05:32.146+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-09T21:05:32.147+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2024-07-09T21:05:32.157+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f7e91c7
+2024-07-09T21:05:32.157+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2024-07-09T21:05:32.158+05:30  WARN 33832 --- [fmsbms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-09T21:05:32.262+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-09T21:05:32.330+05:30  INFO 33832 --- [fmsbms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T21:05:32.406+05:30  INFO 33832 --- [fmsbms] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-09T21:05:32.406+05:30  WARN 33832 --- [fmsbms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-09T21:05:32.438+05:30  WARN 33832 --- [fmsbms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-09T21:05:32.525+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-09T21:05:32.537+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-09T21:05:32.540+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Started FmsbmsApplication in 0.709 seconds (process running for 3487.049)
+2024-07-09T21:05:32.540+05:30  INFO 33832 --- [fmsbms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-07-09T21:06:02.399+05:30  INFO 33832 --- [fmsbms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-07-09T21:06:02.627+05:30  INFO 33832 --- [fmsbms] [Thread-42] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T21:06:02.627+05:30  INFO 33832 --- [fmsbms] [Thread-42] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2024-07-09T21:06:02.636+05:30  INFO 33832 --- [fmsbms] [Thread-42] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2024-07-09T21:06:02.742+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Starting FmsbmsApplication using Java 17.0.9 with PID 33832 (D:\NumberPortabilityPortalProject\fmsbms\backend\target\classes started by srivalli.p in D:\NumberPortabilityPortalProject\fmsbms\backend)
+2024-07-09T21:06:02.743+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T21:06:02.873+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-09T21:06:02.899+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 9 JPA repository interfaces.
+2024-07-09T21:06:02.954+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-09T21:06:02.955+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-09T21:06:02.955+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-09T21:06:02.972+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-07-09T21:06:02.972+05:30  INFO 33832 --- [fmsbms] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 228 ms
+2024-07-09T21:06:02.993+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-09T21:06:02.994+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-09T21:06:02.998+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-09T21:06:02.998+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2024-07-09T21:06:03.007+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-12 - Added connection com.mysql.cj.jdbc.ConnectionImpl@13681ed0
+2024-07-09T21:06:03.007+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2024-07-09T21:06:03.008+05:30  WARN 33832 --- [fmsbms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-09T21:06:03.071+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-09T21:06:03.129+05:30  INFO 33832 --- [fmsbms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T21:06:03.190+05:30  INFO 33832 --- [fmsbms] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-09T21:06:03.191+05:30  WARN 33832 --- [fmsbms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-09T21:06:03.237+05:30  WARN 33832 --- [fmsbms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-09T21:06:03.367+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-09T21:06:03.383+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-09T21:06:03.388+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Started FmsbmsApplication in 0.696 seconds (process running for 3517.898)
+2024-07-09T21:06:03.389+05:30  INFO 33832 --- [fmsbms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-07-09T21:06:07.839+05:30  INFO 33832 --- [fmsbms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-07-09T21:06:08.112+05:30  INFO 33832 --- [fmsbms] [Thread-46] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T21:06:08.113+05:30  INFO 33832 --- [fmsbms] [Thread-46] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2024-07-09T21:06:08.121+05:30  INFO 33832 --- [fmsbms] [Thread-46] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+2024-07-09T21:06:08.199+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Starting FmsbmsApplication using Java 17.0.9 with PID 33832 (D:\NumberPortabilityPortalProject\fmsbms\backend\target\classes started by srivalli.p in D:\NumberPortabilityPortalProject\fmsbms\backend)
+2024-07-09T21:06:08.200+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T21:06:08.332+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-09T21:06:08.362+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 9 JPA repository interfaces.
+2024-07-09T21:06:08.419+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-09T21:06:08.419+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-09T21:06:08.420+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-09T21:06:08.437+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-07-09T21:06:08.437+05:30  INFO 33832 --- [fmsbms] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 237 ms
+2024-07-09T21:06:08.459+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-09T21:06:08.466+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-09T21:06:08.472+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-09T21:06:08.473+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2024-07-09T21:06:08.486+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-13 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1110a2f0
+2024-07-09T21:06:08.486+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2024-07-09T21:06:08.487+05:30  WARN 33832 --- [fmsbms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-09T21:06:08.568+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-09T21:06:08.626+05:30  INFO 33832 --- [fmsbms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T21:06:08.685+05:30  INFO 33832 --- [fmsbms] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-09T21:06:08.686+05:30  WARN 33832 --- [fmsbms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-09T21:06:08.716+05:30  WARN 33832 --- [fmsbms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-09T21:06:08.807+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-09T21:06:08.818+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-09T21:06:08.822+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Started FmsbmsApplication in 0.64 seconds (process running for 3523.331)
+2024-07-09T21:06:08.823+05:30  INFO 33832 --- [fmsbms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-07-09T21:06:23.189+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-09T21:06:23.189+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-09T21:06:23.190+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-09T21:06:24.226+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 853 ms
+2024-07-09T21:06:49.447+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-10] c.p.fmsbms.controller.AuthController     : signin
+2024-07-09T21:06:49.589+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-10] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T21:07:14.237+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-1] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T21:07:14.243+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-1] c.p.fmsbms.service.FamilyServiceImpl     : getFamilyByUsername
+2024-07-09T21:07:14.243+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-1] c.p.f.service.FamilyMemberServiceImpl    : findByFamily
+2024-07-09T21:07:28.604+05:30  INFO 33832 --- [fmsbms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-07-09T21:07:28.834+05:30  INFO 33832 --- [fmsbms] [Thread-50] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T21:07:28.835+05:30  INFO 33832 --- [fmsbms] [Thread-50] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2024-07-09T21:07:28.846+05:30  INFO 33832 --- [fmsbms] [Thread-50] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
+2024-07-09T21:07:28.950+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Starting FmsbmsApplication using Java 17.0.9 with PID 33832 (D:\NumberPortabilityPortalProject\fmsbms\backend\target\classes started by srivalli.p in D:\NumberPortabilityPortalProject\fmsbms\backend)
+2024-07-09T21:07:28.950+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T21:07:29.093+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-09T21:07:29.121+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 9 JPA repository interfaces.
+2024-07-09T21:07:29.179+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-09T21:07:29.179+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-09T21:07:29.179+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-09T21:07:29.197+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-07-09T21:07:29.197+05:30  INFO 33832 --- [fmsbms] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 246 ms
+2024-07-09T21:07:29.222+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-09T21:07:29.223+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-09T21:07:29.227+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-09T21:07:29.228+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Starting...
+2024-07-09T21:07:29.235+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-14 - Added connection com.mysql.cj.jdbc.ConnectionImpl@31f5cd27
+2024-07-09T21:07:29.236+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Start completed.
+2024-07-09T21:07:29.236+05:30  WARN 33832 --- [fmsbms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-09T21:07:29.297+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-09T21:07:29.355+05:30  INFO 33832 --- [fmsbms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T21:07:29.416+05:30  INFO 33832 --- [fmsbms] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-09T21:07:29.416+05:30  WARN 33832 --- [fmsbms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-09T21:07:29.447+05:30  WARN 33832 --- [fmsbms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-09T21:07:29.594+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-09T21:07:29.612+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-09T21:07:29.617+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Started FmsbmsApplication in 0.716 seconds (process running for 3604.127)
+2024-07-09T21:07:29.618+05:30  INFO 33832 --- [fmsbms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-07-09T21:07:31.039+05:30  INFO 33832 --- [fmsbms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-07-09T21:07:31.488+05:30  INFO 33832 --- [fmsbms] [Thread-54] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T21:07:31.488+05:30  INFO 33832 --- [fmsbms] [Thread-54] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown initiated...
+2024-07-09T21:07:31.494+05:30  INFO 33832 --- [fmsbms] [Thread-54] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown completed.
+2024-07-09T21:07:31.560+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Starting FmsbmsApplication using Java 17.0.9 with PID 33832 (D:\NumberPortabilityPortalProject\fmsbms\backend\target\classes started by srivalli.p in D:\NumberPortabilityPortalProject\fmsbms\backend)
+2024-07-09T21:07:31.560+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T21:07:31.687+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-09T21:07:31.715+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 9 JPA repository interfaces.
+2024-07-09T21:07:31.791+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-09T21:07:31.792+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-09T21:07:31.792+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-09T21:07:31.808+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-07-09T21:07:31.808+05:30  INFO 33832 --- [fmsbms] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 247 ms
+2024-07-09T21:07:31.829+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-09T21:07:31.830+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-09T21:07:31.834+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-09T21:07:31.835+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Starting...
+2024-07-09T21:07:31.844+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-15 - Added connection com.mysql.cj.jdbc.ConnectionImpl@17758ba
+2024-07-09T21:07:31.844+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Start completed.
+2024-07-09T21:07:31.848+05:30  WARN 33832 --- [fmsbms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-09T21:07:31.974+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-09T21:07:32.032+05:30  INFO 33832 --- [fmsbms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T21:07:32.087+05:30  INFO 33832 --- [fmsbms] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-09T21:07:32.087+05:30  WARN 33832 --- [fmsbms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-09T21:07:32.114+05:30  WARN 33832 --- [fmsbms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-09T21:07:32.191+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-09T21:07:32.204+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-09T21:07:32.208+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Started FmsbmsApplication in 0.664 seconds (process running for 3606.718)
+2024-07-09T21:07:32.209+05:30  INFO 33832 --- [fmsbms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-07-09T21:07:37.739+05:30  INFO 33832 --- [fmsbms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-07-09T21:07:38.070+05:30  INFO 33832 --- [fmsbms] [Thread-58] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T21:07:38.070+05:30  INFO 33832 --- [fmsbms] [Thread-58] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown initiated...
+2024-07-09T21:07:38.075+05:30  INFO 33832 --- [fmsbms] [Thread-58] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown completed.
+2024-07-09T21:07:38.190+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Starting FmsbmsApplication using Java 17.0.9 with PID 33832 (D:\NumberPortabilityPortalProject\fmsbms\backend\target\classes started by srivalli.p in D:\NumberPortabilityPortalProject\fmsbms\backend)
+2024-07-09T21:07:38.191+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T21:07:38.328+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-09T21:07:38.361+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 9 JPA repository interfaces.
+2024-07-09T21:07:38.418+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-09T21:07:38.419+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-09T21:07:38.419+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-09T21:07:38.438+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-07-09T21:07:38.438+05:30  INFO 33832 --- [fmsbms] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 246 ms
+2024-07-09T21:07:38.460+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-09T21:07:38.461+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-09T21:07:38.466+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-09T21:07:38.467+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Starting...
+2024-07-09T21:07:38.476+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-16 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4c75c31f
+2024-07-09T21:07:38.476+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Start completed.
+2024-07-09T21:07:38.477+05:30  WARN 33832 --- [fmsbms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-09T21:07:38.566+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-09T21:07:38.633+05:30  INFO 33832 --- [fmsbms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T21:07:38.703+05:30  INFO 33832 --- [fmsbms] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-09T21:07:38.703+05:30  WARN 33832 --- [fmsbms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-09T21:07:38.739+05:30  WARN 33832 --- [fmsbms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-09T21:07:38.825+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-09T21:07:38.841+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-09T21:07:38.845+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Started FmsbmsApplication in 0.706 seconds (process running for 3613.354)
+2024-07-09T21:07:38.846+05:30  INFO 33832 --- [fmsbms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-07-09T21:42:39.229+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-09T21:42:39.229+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-09T21:42:39.232+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-07-09T21:44:24.402+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-7] c.p.fmsbms.controller.AuthController     : signin
+2024-07-09T21:44:24.565+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-7] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T22:02:14.277+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-1] c.p.fmsbms.controller.AuthController     : signin
+2024-07-09T22:02:14.282+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-1] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T22:26:17.063+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-8] c.p.fmsbms.controller.AuthController     : signin
+2024-07-09T22:26:17.072+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-8] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T22:41:06.067+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-6] c.p.fmsbms.controller.AuthController     : signin
+2024-07-09T22:41:06.075+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-6] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T22:41:07.930+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-8] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T22:41:07.971+05:30  WARN 33832 --- [fmsbms] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.project.fmsbms.exceptions.BillingServiceNotFoundException: Bill Not Found Exception]
+2024-07-09T22:41:11.877+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-9] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T22:41:11.897+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-9] c.p.fmsbms.service.FamilyServiceImpl     : getFamilyById
+2024-07-09T22:41:11.902+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-9] c.p.f.service.FamilyMemberServiceImpl    : findByFamily
+2024-07-09T22:41:11.903+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-9] c.p.f.service.MobileServiceServiceImpl   : getByFamilyMemnber
+2024-07-09T22:41:11.918+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-9] c.p.f.service.MobileServiceServiceImpl   : getByFamilyMemnber
+2024-07-09T22:41:11.927+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-9] c.p.f.service.MobileServiceServiceImpl   : getByFamilyMemnber
+2024-07-09T22:41:11.927+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-9] c.p.fmsbms.service.BillingServiceImpl    : addBill
+2024-07-09T22:41:11.950+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-9] c.p.fmsbms.controller.BillingController  : addbill
+2024-07-09T22:41:11.980+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-1] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T22:41:16.849+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-2] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T22:41:16.865+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-2] c.p.fmsbms.service.FamilyServiceImpl     : getFamilyById
+2024-07-09T22:41:16.865+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-2] c.p.f.service.FamilyMemberServiceImpl    : findByFamily
+2024-07-09T22:41:16.873+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-2] c.p.f.service.MobileServiceServiceImpl   : getByFamilyMemnber
+2024-07-09T22:41:16.878+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-2] c.p.f.service.MobileServiceServiceImpl   : getByFamilyMemnber
+2024-07-09T22:41:16.882+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-2] c.p.f.service.MobileServiceServiceImpl   : getByFamilyMemnber
+2024-07-09T22:41:16.895+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-2] c.p.f.service.MobileServiceServiceImpl   : getByFamilyMemnber
+2024-07-09T22:41:16.898+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-2] c.p.f.service.MobileServiceServiceImpl   : getByFamilyMemnber
+2024-07-09T22:41:16.899+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-2] c.p.fmsbms.service.BillingServiceImpl    : addBill
+2024-07-09T22:41:16.931+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-2] c.p.fmsbms.controller.BillingController  : addbill
+2024-07-09T22:41:16.964+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-3] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T22:41:22.215+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-4] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T22:41:22.223+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-4] c.p.fmsbms.service.FamilyServiceImpl     : getFamilyById
+2024-07-09T22:41:22.223+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-4] c.p.f.service.FamilyMemberServiceImpl    : findByFamily
+2024-07-09T22:41:22.227+05:30  WARN 33832 --- [fmsbms] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.project.fmsbms.exceptions.FamilyMemberNotFoundException: Family Member Not Found]
+2024-07-09T22:41:41.645+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-5] c.p.fmsbms.controller.AuthController     : signin
+2024-07-09T22:41:41.645+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-5] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T22:43:19.033+05:30  INFO 33832 --- [fmsbms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-07-09T22:43:19.333+05:30  INFO 33832 --- [fmsbms] [Thread-62] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T22:43:19.337+05:30  INFO 33832 --- [fmsbms] [Thread-62] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown initiated...
+2024-07-09T22:43:19.343+05:30  INFO 33832 --- [fmsbms] [Thread-62] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown completed.
+2024-07-09T22:43:19.570+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Starting FmsbmsApplication using Java 17.0.9 with PID 33832 (D:\NumberPortabilityPortalProject\fmsbms\backend\target\classes started by srivalli.p in D:\NumberPortabilityPortalProject\fmsbms\backend)
+2024-07-09T22:43:19.570+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T22:43:19.737+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-09T22:43:19.767+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 9 JPA repository interfaces.
+2024-07-09T22:43:19.833+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-09T22:43:19.834+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-09T22:43:19.834+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-09T22:43:19.853+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-07-09T22:43:19.853+05:30  INFO 33832 --- [fmsbms] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 281 ms
+2024-07-09T22:43:19.878+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-09T22:43:19.879+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-09T22:43:19.886+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-09T22:43:19.886+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Starting...
+2024-07-09T22:43:19.899+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-17 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3de8ac9b
+2024-07-09T22:43:19.899+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Start completed.
+2024-07-09T22:43:19.901+05:30  WARN 33832 --- [fmsbms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-09T22:43:19.988+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-09T22:43:20.063+05:30  INFO 33832 --- [fmsbms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T22:43:20.146+05:30  INFO 33832 --- [fmsbms] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-09T22:43:20.147+05:30  WARN 33832 --- [fmsbms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-09T22:43:20.224+05:30  WARN 33832 --- [fmsbms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-09T22:43:20.419+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-09T22:43:20.438+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-09T22:43:20.441+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Started FmsbmsApplication in 0.972 seconds (process running for 9354.951)
+2024-07-09T22:43:20.443+05:30  INFO 33832 --- [fmsbms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-07-09T22:43:21.848+05:30  INFO 33832 --- [fmsbms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-07-09T22:43:22.185+05:30  INFO 33832 --- [fmsbms] [Thread-66] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T22:43:22.186+05:30  INFO 33832 --- [fmsbms] [Thread-66] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown initiated...
+2024-07-09T22:43:22.193+05:30  INFO 33832 --- [fmsbms] [Thread-66] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown completed.
+2024-07-09T22:43:22.311+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Starting FmsbmsApplication using Java 17.0.9 with PID 33832 (D:\NumberPortabilityPortalProject\fmsbms\backend\target\classes started by srivalli.p in D:\NumberPortabilityPortalProject\fmsbms\backend)
+2024-07-09T22:43:22.312+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T22:43:22.465+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-09T22:43:22.493+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 9 JPA repository interfaces.
+2024-07-09T22:43:22.550+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-09T22:43:22.550+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-09T22:43:22.550+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-09T22:43:22.569+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-07-09T22:43:22.569+05:30  INFO 33832 --- [fmsbms] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 256 ms
+2024-07-09T22:43:22.601+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-09T22:43:22.602+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-09T22:43:22.606+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-09T22:43:22.607+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Starting...
+2024-07-09T22:43:22.617+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-18 - Added connection com.mysql.cj.jdbc.ConnectionImpl@627f4c70
+2024-07-09T22:43:22.618+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Start completed.
+2024-07-09T22:43:22.619+05:30  WARN 33832 --- [fmsbms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-09T22:43:22.694+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-09T22:43:22.783+05:30  INFO 33832 --- [fmsbms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T22:43:22.856+05:30  INFO 33832 --- [fmsbms] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-09T22:43:22.856+05:30  WARN 33832 --- [fmsbms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-09T22:43:22.914+05:30  WARN 33832 --- [fmsbms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-09T22:43:23.030+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-09T22:43:23.045+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-09T22:43:23.049+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Started FmsbmsApplication in 0.787 seconds (process running for 9357.559)
+2024-07-09T22:43:23.050+05:30  INFO 33832 --- [fmsbms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-07-09T22:43:43.974+05:30  INFO 33832 --- [fmsbms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-07-09T22:43:44.257+05:30  INFO 33832 --- [fmsbms] [Thread-70] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T22:43:44.257+05:30  INFO 33832 --- [fmsbms] [Thread-70] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown initiated...
+2024-07-09T22:43:44.266+05:30  INFO 33832 --- [fmsbms] [Thread-70] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown completed.
+2024-07-09T22:43:44.352+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Starting FmsbmsApplication using Java 17.0.9 with PID 33832 (D:\NumberPortabilityPortalProject\fmsbms\backend\target\classes started by srivalli.p in D:\NumberPortabilityPortalProject\fmsbms\backend)
+2024-07-09T22:43:44.353+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T22:43:44.503+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-09T22:43:44.531+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 9 JPA repository interfaces.
+2024-07-09T22:43:44.588+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-09T22:43:44.589+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-09T22:43:44.589+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-09T22:43:44.608+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-07-09T22:43:44.608+05:30  INFO 33832 --- [fmsbms] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 254 ms
+2024-07-09T22:43:44.635+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-09T22:43:44.635+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-09T22:43:44.640+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-09T22:43:44.640+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Starting...
+2024-07-09T22:43:44.648+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-19 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5029df52
+2024-07-09T22:43:44.649+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Start completed.
+2024-07-09T22:43:44.649+05:30  WARN 33832 --- [fmsbms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-09T22:43:44.723+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-09T22:43:44.787+05:30  INFO 33832 --- [fmsbms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T22:43:44.848+05:30  INFO 33832 --- [fmsbms] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-09T22:43:44.849+05:30  WARN 33832 --- [fmsbms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-09T22:43:44.879+05:30  WARN 33832 --- [fmsbms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-09T22:43:44.967+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-09T22:43:44.986+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-09T22:43:44.991+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Started FmsbmsApplication in 0.654 seconds (process running for 9379.501)
+2024-07-09T22:43:44.992+05:30  INFO 33832 --- [fmsbms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-07-09T22:43:56.680+05:30  INFO 33832 --- [fmsbms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-07-09T22:43:56.908+05:30  INFO 33832 --- [fmsbms] [Thread-74] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T22:43:56.909+05:30  INFO 33832 --- [fmsbms] [Thread-74] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Shutdown initiated...
+2024-07-09T22:43:56.912+05:30  INFO 33832 --- [fmsbms] [Thread-74] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Shutdown completed.
+2024-07-09T22:43:57.041+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Starting FmsbmsApplication using Java 17.0.9 with PID 33832 (D:\NumberPortabilityPortalProject\fmsbms\backend\target\classes started by srivalli.p in D:\NumberPortabilityPortalProject\fmsbms\backend)
+2024-07-09T22:43:57.041+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T22:43:57.178+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-09T22:43:57.207+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 9 JPA repository interfaces.
+2024-07-09T22:43:57.259+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-09T22:43:57.260+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-09T22:43:57.260+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-09T22:43:57.277+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-07-09T22:43:57.277+05:30  INFO 33832 --- [fmsbms] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 235 ms
+2024-07-09T22:43:57.301+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-09T22:43:57.302+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-09T22:43:57.306+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-09T22:43:57.306+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Starting...
+2024-07-09T22:43:57.318+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-20 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4d7ebcef
+2024-07-09T22:43:57.318+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Start completed.
+2024-07-09T22:43:57.319+05:30  WARN 33832 --- [fmsbms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-09T22:43:57.399+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-09T22:43:57.460+05:30  INFO 33832 --- [fmsbms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T22:43:57.551+05:30  INFO 33832 --- [fmsbms] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-09T22:43:57.552+05:30  WARN 33832 --- [fmsbms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-09T22:43:57.594+05:30  WARN 33832 --- [fmsbms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-09T22:43:57.684+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-09T22:43:57.700+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-09T22:43:57.703+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Started FmsbmsApplication in 0.707 seconds (process running for 9392.213)
+2024-07-09T22:43:57.704+05:30  INFO 33832 --- [fmsbms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-07-09T22:44:03.219+05:30  INFO 33832 --- [fmsbms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-07-09T22:44:03.528+05:30  INFO 33832 --- [fmsbms] [Thread-78] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T22:44:03.529+05:30  INFO 33832 --- [fmsbms] [Thread-78] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Shutdown initiated...
+2024-07-09T22:44:03.536+05:30  INFO 33832 --- [fmsbms] [Thread-78] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Shutdown completed.
+2024-07-09T22:44:03.660+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Starting FmsbmsApplication using Java 17.0.9 with PID 33832 (D:\NumberPortabilityPortalProject\fmsbms\backend\target\classes started by srivalli.p in D:\NumberPortabilityPortalProject\fmsbms\backend)
+2024-07-09T22:44:03.660+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T22:44:03.818+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-09T22:44:03.852+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 9 JPA repository interfaces.
+2024-07-09T22:44:03.909+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-09T22:44:03.910+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-09T22:44:03.910+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-09T22:44:03.929+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-07-09T22:44:03.930+05:30  INFO 33832 --- [fmsbms] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 269 ms
+2024-07-09T22:44:03.956+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-09T22:44:03.957+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-09T22:44:03.962+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-09T22:44:03.963+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Starting...
+2024-07-09T22:44:03.988+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-21 - Added connection com.mysql.cj.jdbc.ConnectionImpl@b7c1ec
+2024-07-09T22:44:03.989+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Start completed.
+2024-07-09T22:44:03.993+05:30  WARN 33832 --- [fmsbms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-09T22:44:04.057+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-09T22:44:04.118+05:30  INFO 33832 --- [fmsbms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T22:44:04.178+05:30  INFO 33832 --- [fmsbms] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-09T22:44:04.178+05:30  WARN 33832 --- [fmsbms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-09T22:44:04.212+05:30  WARN 33832 --- [fmsbms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-09T22:44:04.310+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-09T22:44:04.321+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-09T22:44:04.324+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Started FmsbmsApplication in 0.717 seconds (process running for 9398.834)
+2024-07-09T22:44:04.325+05:30  INFO 33832 --- [fmsbms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-07-09T22:44:17.117+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-09T22:44:17.117+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-09T22:44:17.117+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-07-09T22:44:17.790+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-8] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 491 ms
+2024-07-09T22:44:37.369+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-9] c.p.fmsbms.controller.AuthController     : signin
+2024-07-09T22:44:37.502+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-9] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T22:45:11.095+05:30  INFO 33832 --- [fmsbms] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-07-09T22:45:11.495+05:30  INFO 33832 --- [fmsbms] [Thread-82] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T22:45:11.496+05:30  INFO 33832 --- [fmsbms] [Thread-82] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Shutdown initiated...
+2024-07-09T22:45:11.504+05:30  INFO 33832 --- [fmsbms] [Thread-82] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Shutdown completed.
+2024-07-09T22:45:11.615+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Starting FmsbmsApplication using Java 17.0.9 with PID 33832 (D:\NumberPortabilityPortalProject\fmsbms\backend\target\classes started by srivalli.p in D:\NumberPortabilityPortalProject\fmsbms\backend)
+2024-07-09T22:45:11.616+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-07-09T22:45:11.769+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-09T22:45:11.797+05:30  INFO 33832 --- [fmsbms] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 9 JPA repository interfaces.
+2024-07-09T22:45:11.857+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-09T22:45:11.858+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-09T22:45:11.858+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-09T22:45:11.877+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2024-07-09T22:45:11.878+05:30  INFO 33832 --- [fmsbms] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 260 ms
+2024-07-09T22:45:11.899+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-09T22:45:11.900+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-09T22:45:11.904+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-09T22:45:11.905+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Starting...
+2024-07-09T22:45:11.916+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-22 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3da0e8f
+2024-07-09T22:45:11.916+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Start completed.
+2024-07-09T22:45:11.917+05:30  WARN 33832 --- [fmsbms] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-09T22:45:11.998+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-09T22:45:12.070+05:30  INFO 33832 --- [fmsbms] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T22:45:12.135+05:30  INFO 33832 --- [fmsbms] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-07-09T22:45:12.135+05:30  WARN 33832 --- [fmsbms] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-07-09T22:45:12.167+05:30  WARN 33832 --- [fmsbms] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-09T22:45:12.260+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-09T22:45:12.273+05:30  INFO 33832 --- [fmsbms] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-09T22:45:12.277+05:30  INFO 33832 --- [fmsbms] [restartedMain] com.project.fmsbms.FmsbmsApplication     : Started FmsbmsApplication in 0.684 seconds (process running for 9466.787)
+2024-07-09T22:45:12.278+05:30  INFO 33832 --- [fmsbms] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-07-09T22:45:14.907+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-09T22:45:14.907+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-09T22:45:14.909+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-07-09T22:45:15.249+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-10] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 160 ms
+2024-07-09T22:45:33.630+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-1] c.p.fmsbms.controller.AuthController     : signin
+2024-07-09T22:45:33.803+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-1] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T22:45:55.592+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-6] c.p.f.service.UserEntityServiceImpl      : User found
+2024-07-09T22:45:55.606+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-6] c.p.fmsbms.service.FamilyServiceImpl     : getFamilyByUsername
+2024-07-09T22:45:55.621+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-6] c.p.fmsbms.service.BillingServiceImpl    : getBill
+2024-07-09T22:45:55.639+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-6] c.p.fmsbms.service.BillingServiceImpl    : updateBill
+2024-07-09T22:45:55.639+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-6] c.p.fmsbms.service.PaymentServiceImpl    : addPayment
+2024-07-09T22:45:55.661+05:30  INFO 33832 --- [fmsbms] [http-nio-8080-exec-6] c.p.fmsbms.controller.PaymentController  : addpayment
+2024-07-09T23:10:13.952+05:30  INFO 33832 --- [fmsbms] [RMI TCP Connection(187)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-07-09T23:10:15.666+05:30  INFO 33832 --- [fmsbms] [RMI TCP Connection(187)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-09T23:10:15.668+05:30  INFO 33832 --- [fmsbms] [RMI TCP Connection(187)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Shutdown initiated...
+2024-07-09T23:10:15.685+05:30  INFO 33832 --- [fmsbms] [RMI TCP Connection(187)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Shutdown completed.
