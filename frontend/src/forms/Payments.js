@@ -1,164 +1,174 @@
-import PaymentService from '../services/PaymentService';
-import { useNavigate, Link } from 'react-router-dom';
-import { useState } from 'react';
-import { useRef, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import AuthService from '../services/AuthService';
+import PaymentService from '../services/PaymentService'; // Assuming you have a PaymentService for API calls
  
-const Payments = () => {
-  const [newPayment, setNewPayment] = useState({
-    billId: '',
-    username: '',
-    paymentMethod: ''
-  });
+const Payment = () => {
   const [payments, setPayments] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [bills, setBills] = useState([]);
+  const [paymentData, setPaymentData] = useState({
+    username: '',
+    billId: '',
+    paymentMethod: '',
+  });
   const [message, setMessage] = useState('');
-  const [selectedPayment, setSelectedPayment] = useState(null);
- 
-  const form = useRef();
-  const navigate = useNavigate();
+  const [error, setError] = useState('');
  
   useEffect(() => {
+    fetchBills();
     fetchPayments();
   }, []);
  
-  const fetchPayments = (familyId) => {
-    PaymentService.getAllPaymentsByFamilyId(familyId)
+  const fetchPayments = () => {
+    const username = AuthService.getCurrentUser().username;
+    console.log(username);
+    PaymentService.getAllPaymentsByUsername({ username })
       .then(response => {
         setPayments(response);
       })
       .catch(error => {
-        console.error('Error fetching payments:', error);
+        console.error('Error fetching payments: ', error);
       });
   };
 
+  const fetchBills = () => {
+    const username = AuthService.getCurrentUser().username;
+    console.log(username);
+    PaymentService.getBillByFamilyUsername({ username })
+      .then(response => {
+        setBills(response);
+      })
+      .catch(error => {
+        console.error('Error fetching bills: ', error);
+      });
+  };
+ 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setNewPayment({ ...newPayment, [name]: value });
+    setPaymentData({ ...paymentData, [name]: value });
   };
  
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true);
     setMessage('');
-    PaymentService.addPayment(newPayment)
+    setError('');
+ 
+    PaymentService.addPayment(paymentData)
       .then(() => {
-        alert('Payment added successfully');
-        setNewPayment({
-            billId: '',
-            username: '',
-            paymentMethod: ''
-        });
+        setMessage('Payment added successfully');
+        setPaymentData({ username: '', billId: '', paymentMethod: '' });
         fetchPayments();
       })
       .catch(error => {
-        console.error('Error adding payment:', error);
-        alert('An error occurred while adding payment');
-      })
-      .finally(() => {
-        setLoading(false);
+        console.error('Error adding payment: ', error);
+        setError('An error occurred while adding the payment');
       });
   };
  
-  const fetchPayment = async (paymentId) => {
-    try {
-      const payment = await PaymentService.getPayment(paymentId);
-      setSelectedPayment(payment); // Set the selected device
-    } catch (error) {
-      console.error('Error fetching customer by ID:', error);
-    }
-  };
- 
   return (
-    <div className="container">
-      <h2> ADD PAYMENT </h2>
-      <div className="card card-container">
-        <form onSubmit={handleSubmit} ref={form}>
-          {console.log("dfhsfg",newPayment)}
+    <div className="container mt-5 pt-5">
+      <h3 className="mt-5">BILLS </h3>
+      <table className="table table-striped table-bordered mt-3">
+        <thead>
+          <tr>
+            <th>Bill ID</th>
+            <th>Amount</th>
+            <th>Start Period</th>
+            <th>End Period</th>
+            <th>Due Date</th>
+            <th>Paid</th>
+          </tr>
+        </thead>
+        <tbody>
+          {bills.map(bill => (
+            <tr key={bill.billId}>
+              <td>{bill.billId}</td>
+              <td>{bill.amount}</td>
+              <td>{bill.billingPeriodStart}</td>
+              <td>{bill.billingPeriodEnd}</td>
+              <td>{bill.dueDate}</td>
+              <td>{bill.paid.toString()}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <h2 className="mb-5 pt-3">PAYMENTS</h2>
+      <div className="card card-container mt-3 p-3">
+        <h3>ADD PAYMENT</h3>
+        <form onSubmit={handleSubmit}>
           <div className="mb-3">
-            <label htmlFor="billId" className="form-label">Bill ID : </label>
-            <input type="number" className="form-control" id="billId" name="billId" value={newPayment.billId} onChange={handleInputChange} required />
+            <label htmlFor="username" className="form-label">Username:</label>
+            <input
+              type="text"
+              className="form-control"
+              id="username"
+              name="username"
+              value={paymentData.username}
+              onChange={handleInputChange}
+              required
+            />
           </div>
           <div className="mb-3">
-            <label htmlFor="username" className="form-label">Family ID : </label>
-            <input type="text" className="form-control" id="username" name="username" value={newPayment?.family?.username} onChange={handleInputChange} required />
-          </div>
-          <div className="mb-3">
-            <label htmlFor="paymentMethod" className="form-label">Payment Method : </label>
-            <input type="text" className="form-control" id="paymentMethod" name="paymentMethod" value={newPayment.paymentMethod} onChange={handleInputChange} required />
+            <label htmlFor="billId" className="form-label">Bill ID:</label>
+            <div className="input-group">
+              <input
+                type="text"
+                className="form-control"
+                id="billId"
+                name="billId"
+                value={paymentData.billId}
+                onChange={handleInputChange}
+                required
+              />
+            </div>
           </div>
           
-          <button type="submit" className="btn btn-default" disabled={loading}>ADD PAYMENT</button>
+          <div className="mb-3">
+            <label htmlFor="paymentMethod" className="form-label">Payment Method:</label>
+            <input
+              type="text"
+              className="form-control"
+              id="paymentMethod"
+              name="paymentMethod"
+              value={paymentData.paymentMethod}
+              onChange={handleInputChange}
+              required
+            />
+          </div>
+          <button type="submit" className="btn btn-default">ADD PAYMENT</button>
         </form>
+        {message && <p className="mt-3 alert alert-success">{message}</p>}
+        {error && <p className="mt-3 alert alert-danger">{error}</p>}
       </div>
  
-      <table className="table table-striped table-bordered">
+      <h3 className="mt-5">PAYMENT HISTORY</h3>
+      <table className="table table-striped table-bordered mt-3">
         <thead>
           <tr>
             <th>Payment ID</th>
+            <th>Family ID</th>
+            <th>Bill ID</th>
             <th>Amount</th>
             <th>Payment Date</th>
             <th>Payment Method</th>
-            <th>Bill ID</th>
-            <th>Family ID</th>
-            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
           {payments.map(payment => (
             <tr key={payment.paymentId}>
               <td>{payment.paymentId}</td>
+              <td>{payment.family.username}</td>
+              <td>{payment.bill.billId}</td>
               <td>{payment.amout}</td>
               <td>{payment.paymentDate}</td>
-              <td>{payment.billId}</td>
-              <td>{payment.family.familyId}</td>
-              <td>
-              <button className="btn btn-default" onClick={() => fetchPayment(payment.paymentId)}>View</button>
-              </td>
+              <td>{payment.paymentMethod}</td>
             </tr>
           ))}
         </tbody>
       </table>
-
-
-      
-      {selectedPayment &&(
-      <div>
-      <h2> PAYMENT DETAILS</h2>
-      <table className="table mt-4 table-striped table-bordered">
-        <thead>
-          <tr>
-            <th>Payment Form</th>
-            <th>Payment Details</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Amount</td>
-            <td>{selectedPayment.name}</td>
-          </tr>
-          <tr>
-            <td>Payment Date</td>
-            <td>{selectedPayment.paymentDate}</td>
-          </tr>
-          <tr>
-            <td>Payment Method</td>
-            <td>{selectedPayment.paymentMethod}</td>
-          </tr>
-          <tr>
-            <td>Bill ID</td>
-            <td>{selectedPayment.bill.billId}</td>
-          </tr>
-          <tr>
-            <td>Family ID</td>
-            <td>{selectedPayment.family.familyId}</td>
-          </tr>
-        </tbody>
-      </table>
-      </div>
-     )}
     </div>
   );
 };
  
-export default Payments;
+export default Payment;

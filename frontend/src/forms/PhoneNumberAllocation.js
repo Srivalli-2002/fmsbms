@@ -2,74 +2,66 @@ import React, { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import SystemAdminService from '../services/SystemAdminService';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './MobilePlans.css';
+import './PhoneNumberAllocation.css';
 
 const PhoneNumberAllocation = () => {
-  const [newPhoneNumber, setNewPhoneNumber] = useState({ username: '', phoneNumber: ''});
-  const [loading, setLoading] = useState(false);
-  const [message, setMessage] = useState('');
+  const [username, setUsername] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [message, setMessage] = useState("");
+  const [error, setError] = useState("");
+  const formRef = useRef(null);
 
-  const form = useRef();
-  const navigate = useNavigate();
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    setMessage("");
+    setError("");
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setNewPhoneNumber({ ...newPhoneNumber, [name]: value });
-  };
+    const request = {
+      username: username,
+      phoneNumber: phoneNumber
+    };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
-    setMessage('');
-
-    SystemAdminService.allocatePhoneNumber(newPhoneNumber)
-      .then(() => {
-        setMessage('Phone number allocated successfully');
-        setNewPhoneNumber({ username: '', phoneNumber: ''});
-      })
-      .catch(error => {
-        console.error('Error allocating phone number : ', error);
-        setMessage('An error occurred while allocating the phone number');
-      })
-      .finally(() => {
-        setLoading(false);
-      });
+    try {
+      const response = await SystemAdminService.allocatePhoneNumber(request);
+      setMessage(response);
+      formRef.current.reset(); // Reset form fields after successful submission
+    } catch (err) {
+      setError("Failed to allocate phone number");
+    }
   };
 
   return (
     <div className="container mt-5 pt-3">
-      <h2 className="pb-3">ALLOCATE PHONENUMBER</h2>
+      <h2 className="pb-3">PHONE NUMBER ALLOCATION</h2>
       <div className="card card-container mt-3 p-3">
-        <form onSubmit={handleSubmit} ref={form}>
+        <form onSubmit={handleSubmit} ref={formRef}>
           <div className="mb-3">
             <label htmlFor="username" className="form-label">Username:</label>
             <input
               type="text"
               className="form-control"
               id="username"
-              name="username"
-              value={newPhoneNumber.username}
-              onChange={handleInputChange}
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
               required
             />
           </div>
           <div className="mb-3">
             <label htmlFor="phoneNumber" className="form-label">Phone Number:</label>
             <input
-              type="number"
+              type="text"
               className="form-control"
               id="phoneNumber"
-              name="phoneNumber"
-              value={newPhoneNumber.phoneNumber}
-              onChange={handleInputChange}
+              value={phoneNumber}
+              onChange={(e) => setPhoneNumber(e.target.value)}
               required
             />
           </div>
-          <button type="submit" className="btn btn-default" disabled={loading}>
-            {loading ? 'Adding...' : 'ALLOCATE PHONE NUMBER'}
-          </button>
+          <button type="submit" className="btn btn-default">ALLOCATE</button>
         </form>
       </div>
+      {message && <p className="mt-3 alert alert-success">{message}</p>}
+      {error && <p className="mt-3 alert alert-danger">{error}</p>}
     </div>
   );
 };

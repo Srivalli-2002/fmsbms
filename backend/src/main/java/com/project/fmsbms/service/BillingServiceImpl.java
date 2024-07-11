@@ -15,6 +15,7 @@ import com.project.fmsbms.entities.FamilyMember;
 import com.project.fmsbms.entities.MobileService;
 import com.project.fmsbms.exceptions.BillingServiceNotFoundException;
 import com.project.fmsbms.exceptions.FamilyMemberNotFoundException;
+import com.project.fmsbms.exceptions.FamilyNotFoundException;
 import com.project.fmsbms.exceptions.MobileServiceNotFoundException;
 import com.project.fmsbms.repositories.BillingRepository;
 @Service
@@ -23,6 +24,9 @@ public class BillingServiceImpl implements BillingService {
 
 	@Autowired
 	BillingRepository repo;
+	
+	@Autowired
+	FamilyService familyService;
 	
 	@Autowired
 	FamilyMemberService familyMemberService;
@@ -53,17 +57,10 @@ public class BillingServiceImpl implements BillingService {
 	}
 
 	@Override
-	public Billing getBill(Integer billId) throws BillingServiceNotFoundException{
-		Optional<Billing> b= repo.findById(billId);
-		if(b.isPresent()) 
-			{
-			loggers.info("getBill");
-			return b.get();
-		   }
-		
-		else  throw new  BillingServiceNotFoundException("Bill Not Found Exception");
-		
-	}
+    public Billing getBill(Integer billId) throws BillingServiceNotFoundException {
+        return repo.findById(billId)
+                .orElseThrow(() -> new BillingServiceNotFoundException("Billing not found for id: " + billId));
+    }
 
 	@Override
 	public Billing updateBill(Billing bill) throws BillingServiceNotFoundException {
@@ -84,5 +81,18 @@ public class BillingServiceImpl implements BillingService {
 		if(!bills.isEmpty()) return bills;
 		else throw new  BillingServiceNotFoundException("Bill Not Found Exception");
 	}
+
+	@Override
+	public List<Billing> getBillByUsername(String username) throws BillingServiceNotFoundException, FamilyNotFoundException {
+		Family family = familyService.getFamilyByUsername(username);
+		List<Billing> bills = repo.findAllByFamily(family);
+		if(!bills.isEmpty())
+		{
+			return bills;
+		}
+		else
+			throw new BillingServiceNotFoundException("Bill Not Found Exception");
+	}
+
 
 }

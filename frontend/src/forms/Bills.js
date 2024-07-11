@@ -4,7 +4,7 @@ import CustomerSupportService from '../services/CustomerSupportService';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Bills = () => {
-  const [newBill, setNewBill] = useState({ familyId: '' });
+  const [newBill, setNewBill] = useState({ username: '' });
   const [bills, setBills] = useState([]);
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState('');
@@ -57,13 +57,13 @@ const Bills = () => {
       <div className="card card-container mt-3 p-3">
         <form onSubmit={handleSubmit} ref={form}>
           <div className="mb-3">
-            <label htmlFor="familyId" className="form-label">Family ID:</label>
+            <label htmlFor="username" className="form-label">Username:</label>
             <input
-              type="number"
+              type="text"
               className="form-control"
-              id="familyId"
-              name="familyId"
-              value={newBill.familyId}
+              id="username"
+              name="username"
+              value={newBill.username}
               onChange={handleInputChange}
               required
             />
@@ -94,7 +94,7 @@ const Bills = () => {
               <td>{bill.billingPeriodStart}</td>
               <td>{bill.billingPeriodEnd}</td>
               <td>{bill.amount}</td>
-              <td>{bill.paid}</td>
+              <td>{bill.paid.toString()}</td>
               <td>{bill.dueDate}</td>
             </tr>
           ))}

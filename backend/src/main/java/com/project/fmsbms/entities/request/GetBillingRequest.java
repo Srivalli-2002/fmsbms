@@ -12,5 +12,5 @@ import lombok.ToString;
 @Setter
 @ToString
 public class GetBillingRequest {
-	private Integer billId;
+	private String username;
 }

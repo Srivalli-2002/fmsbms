@@ -35,9 +35,9 @@ const updateRole = async (userData) => {
     
   };
 
-const allocatePhoneNumber = async (username,phoneNumber) => {
+const allocatePhoneNumber = async (request) => {
   try {
-    const response = await axios.post(`${BASE_URL}/allocatephonenumber`, username, phoneNumber, {
+    const response = await axios.post(`${BASE_URL}/allocatephonenumber`, request, {
       headers: {
         'Content-Type': 'application/json',
         ...authHeader(),

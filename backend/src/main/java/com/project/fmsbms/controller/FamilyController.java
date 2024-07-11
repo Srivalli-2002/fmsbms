@@ -23,6 +23,7 @@ import com.project.fmsbms.entities.request.FamilyId;
 import com.project.fmsbms.entities.request.FamilyMemberRequest;
 import com.project.fmsbms.entities.request.FamilyUsername;
 import com.project.fmsbms.entities.request.GetBillingRequest;
+import com.project.fmsbms.entities.request.GetBillingRequestById;
 import com.project.fmsbms.entities.request.GetFamilyMemberRequest;
 import com.project.fmsbms.entities.request.MobileServiceRequest;
 import com.project.fmsbms.exceptions.BillingServiceNotFoundException;
@@ -90,14 +91,15 @@ public class FamilyController {
 		FamilyMember familyMember = familyMemeberService.getMember(getFamilyMemberRequest.getMemeberId());
 		return new ResponseEntity<FamilyMember>(familyMember, HttpStatus.OK);
 	}
+	
 	@PostMapping("/updatemember")
 	public ResponseEntity<FamilyMember> updateFamilyMember(@RequestBody FamilyMemberRequest familyMemberRequest) throws FamilyNotFoundException, FamilyMemberNotFoundException {
 		FamilyMember familyMember = new FamilyMember();
+		familyMember.setMemeberId(familyMemberRequest.getMemberId());
 		familyMember.setName(familyMemberRequest.getName());
 		familyMember.setPhoneNumber(familyMemberRequest.getPhoneNumber());
 		familyMember.setEmail(familyMemberRequest.getEmail());
-		familyMember.setName(familyMemberRequest.getName());
-		familyMember.setFamily(familyService.getFamilyById(familyMemberRequest.getFamilyId()));
+		familyMember.setFamily(familyService.getFamilyByUsername(familyMemberRequest.getUsername()));
 		FamilyMember fm = familyMemeberService.updateMember(familyMember);
 		return new ResponseEntity<FamilyMember>(fm, HttpStatus.OK);
 	}
@@ -126,7 +128,7 @@ public class FamilyController {
 	
 	
 	@PostMapping("/getbill")
-	public ResponseEntity<Billing> getBill(@RequestBody GetBillingRequest getBillingRequest) throws BillingServiceNotFoundException
+	public ResponseEntity<Billing> getBill(@RequestBody GetBillingRequestById getBillingRequest) throws BillingServiceNotFoundException
 	{
 		Billing bill=billingService.getBill(getBillingRequest.getBillId());
 		return new ResponseEntity<Billing>(bill, HttpStatus.OK);

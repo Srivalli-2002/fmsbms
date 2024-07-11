@@ -13,5 +13,5 @@ import lombok.ToString;
 @AllArgsConstructor
 public class BillingRequest {
 
-	private  Integer familyId;
+	private  String username;
 }

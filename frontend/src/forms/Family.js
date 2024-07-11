@@ -1,12 +1,13 @@
+import React, { useState, useEffect } from 'react';
 import FamilyHeadService from '../services/FamilyHeadService';
 import AuthService from '../services/AuthService';
-import { Link } from 'react-router-dom';
-import { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './FamilyHeadService.css';
+import UpdateFamilyMember from './UpdateFamilyMember';
 
 const Family = () => {
   const [members, setMembers] = useState([]);
+  const [selectedMember, setSelectedMember] = useState(null);
 
   useEffect(() => {
     fetchMembers();
@@ -14,15 +15,17 @@ const Family = () => {
 
   const fetchMembers = () => {
     const username = AuthService.getCurrentUser().username;
-    console.log(username);
     FamilyHeadService.getAllMembersByUsername(username)
       .then(response => {
         setMembers(response);
-        console.log(response);
       })
       .catch(error => {
-        console.error('Error fetching members : ', error);
+        console.error('Error fetching members: ', error);
       });
+  };
+
+  const handleUpdateClick = (member) => {
+    setSelectedMember(member);
   };
 
   return (
@@ -31,23 +34,32 @@ const Family = () => {
       <table className="table table-striped table-bordered">
         <thead>
           <tr>
-            <th>Member ID</th>
+            <th>MemberId</th>
             <th>Name</th>
             <th>Email</th>
             <th>Phone Number</th>
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
           {members.map(member => (
-            <tr key={member.memberId}>
-              <td>{member.memberId}</td>
+            <tr key={member.memeberId}>
+              <td>{member.memeberId}</td>
               <td>{member.name}</td>
               <td>{member.email}</td>
               <td>{member.phoneNumber}</td>
+              <td>
+                <button className="btn btn-default" onClick={() => handleUpdateClick(member)}>
+                  Update
+                </button>
+              </td>
             </tr>
           ))}
         </tbody>
       </table>
+      {selectedMember && (
+        <UpdateFamilyMember member={selectedMember} onClose={() => setSelectedMember(null)} onUpdate={fetchMembers} />
+      )}
     </div>
   );
 };

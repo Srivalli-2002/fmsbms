@@ -45,8 +45,9 @@ public class FamilyMemberServiceImpl implements FamilyMemberService {
 		Optional<FamilyMember> updateMember= repo.findById(member.getMemeberId());
 		if(updateMember.isPresent())
 		{
+			
 			loggers.info("updateMember");
-			return updateMember.get();
+			return repo.save(member);
 		}
 		else
 		{

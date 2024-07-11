@@ -12,9 +12,9 @@ import lombok.ToString;
 @Setter
 @ToString
 public class FamilyMemberRequest {
+	private Integer memberId;
 	private String name;
 	private String email;
 	private String username;
 	private Long phoneNumber;
-	private Integer familyId;
 }

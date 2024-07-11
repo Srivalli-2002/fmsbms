@@ -67,9 +67,9 @@ const getAllMembersByUsername = async (username) => {
   
 };
 
-const updateMember = async (membersData) => {
+const updateMember = async (memberData) => {
   try {
-    const response = await axios.post(`${BASE_URL}/updatemember`, membersData, {
+    const response = await axios.post(`${BASE_URL}/updatemember`, memberData, {
       headers: {
         'Content-Type': 'application/json',
         ...authHeader(),

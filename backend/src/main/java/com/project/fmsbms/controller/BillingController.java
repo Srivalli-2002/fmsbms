@@ -19,6 +19,7 @@ import com.project.fmsbms.entities.Billing;
 import com.project.fmsbms.entities.Family;
 import com.project.fmsbms.entities.request.BillingRequest;
 import com.project.fmsbms.entities.request.GetBillingRequest;
+import com.project.fmsbms.entities.request.GetBillingRequestById;
 import com.project.fmsbms.exceptions.BillingServiceNotFoundException;
 import com.project.fmsbms.exceptions.FamilyMemberNotFoundException;
 import com.project.fmsbms.exceptions.FamilyNotFoundException;
@@ -42,7 +43,7 @@ public class BillingController {
 	public ResponseEntity<Billing> addBill(@RequestBody BillingRequest billingRequest) throws FamilyNotFoundException, MobileServiceNotFoundException, FamilyMemberNotFoundException
 	{
 		Billing bill=new Billing();
-		Family family= familyService.getFamilyById(billingRequest.getFamilyId());
+		Family family= familyService.getFamilyByUsername(billingRequest.getUsername());
 		bill.setFamily(family);
 		Billing b= billingService.addBill(bill);
 		loggers.info("addbill");
@@ -58,7 +59,7 @@ public class BillingController {
 	}
 	
 	@PostMapping("/getbill")
-	public ResponseEntity<Billing> getBill(@RequestBody GetBillingRequest getBillingRequest) throws BillingServiceNotFoundException
+	public ResponseEntity<Billing> getBill(@RequestBody GetBillingRequestById getBillingRequest) throws BillingServiceNotFoundException
 	{
 		Billing bill=billingService.getBill(getBillingRequest.getBillId());
 		return new ResponseEntity<Billing>(bill, HttpStatus.OK);
@@ -70,5 +71,7 @@ public class BillingController {
 		List<Billing> bills= billingService.getAllBills();
 		return new ResponseEntity<>(bills, HttpStatus.OK);
 	}
+	
+	
 	
 }
